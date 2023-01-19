@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ty</title>
+</head>
+<body>
+    <form  >
+        <div class="s">
+        User Name:<input type="text" name="user" placeholder="Enter your name" id="name" required><b><span class="formerror"></span></b><br><br>
+        Address:<input type="text" name="address" placeholder="Enter your address" id="address" required><b><span class="formerror"></span><b></b><br><br>
+        Email:<input type="email" name="myemail" placeholder="Enter your email" id="mail" required><b><span class="formerror"></span></b><br><br>
+        Password:<input type="password" name="mypass" placeholder="Enter your password" id="pass" required onchange="validateform()"><b><span class="formerror" id="cp"></span></b><br><br>
+        Confirm password:<input type="password" name="mycpass" placeholder="Confirm your password" id="cpass" required  validateform() required><b> <span class="formerror" id="ccp">  </span></b><br><br>
+        Contact number:<input type="phone" name="num" placeholder="Enter your contact number" id="phone" required ><b><span class="formerror"></span>,</b><br><br>
+        </div>
+    <button class="but" type="submit" value="Submit" >Submit  </button>   
+     <button class="but"type="reset"value="Reset">Reset  </button>
+    </form>
+<body>
+<script>
+function validateform(){
+    let a = document.getElementById("pass").value;
+let b = document.getElementById("cpass").value;
+if(a!=b){
+document.getElementById("ccp").innerHTML="**password doesnot match**";
+}
+else{
+document.getElementById("ccp").innerHTML="";
+}
+if(a.length<8){
+    document.getElementById("cp").innerHTML="**password should be of 8 characters**";
+    return false;
+}
+else{
+document.getElementById("cp").innerHTML="";
+}
+if(a=search(/[0-9]/)==-1){
+    document.getElementById("cp").innerHTML="**password should be of at least of one numeric characters**";
+return false;
+}
+else{
+document.getElementById("cp").innerHTML="";
+}
+if(a=search(/[A-Z]/)==-1){
+    document.getElementById("cp").innerHTML="**password should be of at least of one uppercase characters**";
+return false;
+}
+else{
+document.getElementById("cp").innerHTML="";
+}
+if(a!=(/[!\@\#\$\%\^\&\*\?]/)){
+    document.getElementById("cp").innerHTML="**password should be of at least of one special characters**";
+return false;
+}
+else{
+document.getElementById("cp").innerHTML="";
+}
+if(a.search(/[a-z]/)==-1){
+    document.getElementById("cp").innerHTML="**password should be of at least of one lowerrcase characters**";
+return false;
+}
+else{
+document.getElementById("cp").innerHTML="";
+}
+}
+
+</script>
+</html>

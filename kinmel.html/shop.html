@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping cart</title>
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+  <script src="shop.js"></script>
+  <style>
+    *{
+      background-color: antiquewhite;
+    }
+    .sum:hover{
+padding:5px;
+border: solid red;
+transition: 0.6s;
+}
+.sum{
+  position:relative;
+}
+.img{
+  display:flex;
+  gap: 2rem;
+}
+.price{
+  font-weight: bolder;
+}
+.s{
+  width:100%;
+  margin-bottom: 0.5rem;
+}
+.add-cart{
+  padding:2px;
+  position:absolute;
+  cursor: pointer;
+  right: 0px;
+  background-color: black;
+  color: aliceblue;
+}
+  </style>
+  <div class="img">
+    <div class="sum">
+        <img src="glass.jpg" height="250px"width="200px" class="s">
+        <h2 class="name">Summer Fit</h2>
+        <span class="price">Rs1500</span>
+        <a href="cart.html"><i class="fa-solid fa-bag-shopping add-cart"onclick="cart()"></i></a>
+    </div>
+    <div class="sum">
+    <img src="chain.jpg" height="250px"width="200px"class="s">
+    <h2 class="name2">Winter Fit</h2>
+    <span class="price">Rs2000</span>
+   <a href="cart.html"><i class="fa-solid fa-bag-shopping add-cart" onclick="cart()"></i></a>
+    </div>
+    <div class="sum">
+      <img src="jeans.webp" height="250px"width="200px"class="s">
+      <h2 class="name2">Spring Fit</h2>
+      <span class="price">Rs3000</span>
+     <a href="cart.html"><i class="fa-solid fa-bag-shopping add-cart"onclick="cart()"></i></a>
+      </div>
+  </div>
+</body>
+</html>

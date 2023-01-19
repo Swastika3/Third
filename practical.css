@@ -1,0 +1,21 @@
+*{
+    background-color:black;
+    color: azure;
+}
+.b{
+    margin: 2px;
+    border: 2px solid white;
+}
+.c{
+    margin: 2px;
+    border: 2px solid white;
+}
+.d{
+    margin: 2px;
+    border: 2px solid white;
+}
+.e{
+    display:inline-block;
+    margin: 2px;
+    border: 2px solid white;
+}

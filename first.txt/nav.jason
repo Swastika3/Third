@@ -1,0 +1,13 @@
+[   
+     {      
+          "label": "Home",    
+         "link": "/home"   
+          },   
+          {   
+                 "label": "Team",    
+                     "link": "/team"  
+                       }, 
+                          { 
+                                   "label": "News",    
+                                       "link": "/news"    
+                                       }];
